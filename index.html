@@ -2,32 +2,75 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hangman Game</title>
+
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa|Playfair+Display+SC" rel="stylesheet">
     
 </head>
 <body> 
-    <h1>HANGMAN GAME</h1>
-    <p>Press any key to START</p>
-    
-    <h2>Mystery Word</h2>
-        <div id="mystery-word"> </div>
-    <h2>Letters Guessed</h2>
-        <div id="letter-guessed"> </div>
-    <h2>Incorrect Letters</h2>
-        <div id="incorrect-letters"> </div>
-    <h2>Remaining Guesses</h2>
-    <div id="remaining-guesses"> </div>
-    <h2>Wins</h2>
-    <div id="wins"> </div>    
-    <h2>Losses</h2>
-    <div id="losses"> </div>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <h1>HANGMAN GAME</h1>
+                <p>Press This Button to Play!</p>
+                <button id="new-game-button">Play Now</button>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Hangman Box</h1>
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eros sit amet urna convallis, nec placerat leo fringilla. Pellentesque leo mi, faucibus non ornare in, malesuada eu augue. Mauris id nisi accumsan, aliquam enim a, dapibus turpis. Nullam sodales justo vitae ullamcorper hendrerit. Integer semper interdum purus. Ut placerat libero felis. Etiam mauris risus, dapibus eget porttitor ac, hendrerit vitae neque. Etiam eget hendrerit quam.
+
+                Vivamus egestas egestas orci ut venenatis. Nulla facilisi. Vivamus in ipsum a massa ultricies congue. Etiam sit amet est urna. Nunc a ultrices nunc. Aenean efficitur at ex quis elementum. Morbi ut erat non ipsum consequat fringilla sed et nisl. Sed semper malesuada volutpat. Nullam a gravida erat. Aliquam ac faucibus mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce lacinia venenatis facilisis. Sed libero neque, aliquet quis egestas nec, interdum et sapien. Aenean semper lorem vel leo eleifend, a suscipit velit sagittis.
+
+                Sed feugiat, lacus vel tincidunt bibendum, quam elit euismod libero, id dictum felis metus vel erat. Suspendisse eu pharetra lorem, eu suscipit turpis. Donec sed lacinia leo. Vestibulum non turpis vel lacus semper auctor quis vel dui. Nunc eu sagittis arcu. Praesent efficitur, sapien ac euismod consequat, metus purus imperdiet sem, sed pulvinar urna quam a dui. Donec blandit ex est, in tempus justo pellentesque a. Vivamus non odio eget odio suscipit finibus quis eget nunc. Sed eu pulvinar nibh, posuere egestas nulla. Maecenas et purus tempor sapien maximus rhoncus a a nisl. Praesent sit amet consequat leo. In dapibus interdum blandit.
+
+                <!-- This is where the Hangman image will go -->
+            </div>
+        
+
+            <div class="col-md-6">
+
+                <h2>Guess the Marvel Hero!</h2>
+                <div id="mystery-word"> </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+                <h2>Incorrect Letters</h2>
+                <div id="incorrect-letters"> </div>
+                <br><br>
+            </div>
+            <div class="col-md-3">
+                <h2>Remaining Guesses</h2>
+                <div id="remaining-guesses"> </div>
+                <br><br>
+            </div>
+            
+        
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Wins</h2>
+                <div id="wins"> </div>   
+                <br><br> 
+            </div>
+            <div class="col-md-3">
+                <h2>Losses</h2>
+                <div id="losses"> </div>
+            </div>
+        </div>
     
     
-    
-    
+    </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="game.js"></script>
 </body>
 </html>

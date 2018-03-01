@@ -2,3 +2,8 @@ body {
     background-color: #eee;
     text-align: center;
 }
+.col {
+    background-color: #aaa;
+    border: 2px #000 solid;
+    float: left;
+}

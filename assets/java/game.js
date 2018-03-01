@@ -51,7 +51,8 @@
 
 
     // Add event listener
-
+        newgameButton.addEventListener('click', newGame);
+        
     // Add onkeyup event for letter Guess
 
     // Check if Guessed Letter is Correct and if so, push to Blank Space
