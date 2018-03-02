@@ -29,6 +29,7 @@
         guessedLettersBank = [];
         wrongLettersBank = [];
         mysteryWordPlaceholderArr = [];
+        document.getElementById('hangman').src = "assets/images/7.png"; 
         
         
         //This chooses the new word for each new game
@@ -130,7 +131,7 @@
         checkWin();
     }
 
-    // Image functions
+    // Image functions: I realize there is probably a more efficient way to do this but I couldn't figure it out and this works
 
     function changeImage() {
         if (guessesLeft === 5) {
