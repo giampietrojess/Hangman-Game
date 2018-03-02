@@ -4,14 +4,15 @@
         DOMguessedLetters = document.getElementById('guessed-letters'),
         DOMremainingGuesses = document.getElementById('remaining-guesses'),
         DOMwins = document.getElementById('wins'),
-        DOMlosses = document.getElementById('losses');
-   
-    // Options for Random Words
+        DOMlosses = document.getElementById('losses'),
+        DOMstart = document.getElementById('start');
+
+    // Declaring the Variables
 
     var randomWords = ["Hawkeye","Iron Man","Spider Man","The Incredible Hulk","Black Widow","Captain America","Thor","Wolverine","Daredevil","Doctor Strange","Black Panther","Deadpool"],
         wins = 0,
         losses = 0,
-        guessesLeft = 10,
+        guessesLeft = 8,
         gameRunning = false,
         mysteryWord = '',
         mysteryWordPlaceholderArr = [],
@@ -24,11 +25,12 @@
     function newGame() {
 
         gameRunning = true;
-        guessesLeft = 10;
+        guessesLeft = 6;
         guessedLettersBank = [];
         wrongLettersBank = [];
         mysteryWordPlaceholderArr = [];
-
+        
+        
         //This chooses the new word for each new game
         mysteryWord = randomWords[Math.floor(Math.random() * randomWords.length)];
         
@@ -53,7 +55,8 @@
     
     // Add event listener
     DOMnewGamebutton.addEventListener('click', newGame);
-        
+
+
     // Add onkeyup event for letter Guess
 
     document.onkeyup = function(event) {
@@ -102,6 +105,7 @@
             DOMremainingGuesses.textContent = guessesLeft;
         }
         checkLoss();
+        changeImage();
     }    
     // Check if Win
     function checkWin () {
@@ -110,6 +114,7 @@
             wins++;
             gameRunning = false; 
             DOMwins.textContent = wins;
+            alert("You win! Click the Start button to play again!");
         }
     }
 
@@ -123,4 +128,27 @@
             DOMplaceholders.textContent = mysteryWord;
         }
         checkWin();
+    }
+
+    // Image functions
+
+    function changeImage() {
+        if (guessesLeft === 5) {
+            document.getElementById('hangman').src = "assets/images/6.png";    
+        }
+        if (guessesLeft === 4) {
+            document.getElementById('hangman').src = "assets/images/5.png";    
+        }
+        if (guessesLeft === 3) {
+            document.getElementById('hangman').src = "assets/images/4.png";    
+        }
+        if (guessesLeft === 2) {
+            document.getElementById('hangman').src = "assets/images/3.png";    
+        }
+        if (guessesLeft === 1) {
+            document.getElementById('hangman').src = "assets/images/2.png";    
+        } 
+        if (guessesLeft === 0) {
+            document.getElementById('hangman').src = "assets/images/1.png";    
+        }
     }
