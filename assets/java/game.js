@@ -101,7 +101,26 @@
             DOMguessedLetters.textContent = wrongLettersBank.join(' ');
             DOMremainingGuesses.textContent = guessesLeft;
         }
+        checkLoss();
     }    
     // Check if Win
+    function checkWin () {
+        if (mysteryWord.toLowerCase() === mysteryWordPlaceholderArr.join('').toLowerCase())
+        {
+            wins++;
+            gameRunning = false; 
+            DOMwins.textContent = wins;
+        }
+    }
 
     // Check if Lost
+
+    function checkLoss() {
+        if (guessesLeft === 0) {
+            losses++;
+            gameRunning = false;
+            DOMlosses.textContent = losses;
+            DOMplaceholders.textContent = mysteryWord;
+        }
+        checkWin();
+    }
