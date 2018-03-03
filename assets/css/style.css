@@ -15,6 +15,7 @@ img {
     background-image: url('../images/DY0270-York-Wallcoverings-Disney-Kids-3-Marvel-Comics-Wallpaper-Black.jpg');
     background-attachment: scroll;
     background-repeat: repeat;
+    height: 33%;
 }
 .marvel {
     background-color: #990000;
@@ -27,6 +28,7 @@ img {
     border: 2px rgb(70, 20, 20) solid;
     background-image: url('../images/comic-dots.png');
     background-size: 100%;
+    height: 80%;
     margin-top: 10px;
 
 }
@@ -34,7 +36,45 @@ img {
     background-color: #fff;
     border: 2px black solid;
     margin-top: 10px;
-    
+    padding: 0px 20px 50px 20px;
+       
+}
+.wrong {
+    background-color: #fff;
+    border: 2px black solid;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 50px;
+    padding: 0px;
+}
+.remaining {
+    background-color: #fff;
+    border: 2px black solid;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0px;
+    width: 20%;
+}
+.winner {
+    background-color: #fff;
+    border: 2px black solid;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0px;
+    width: 20%;
+}
+.loser{
+    background-color: #fff;
+    border: 2px black solid;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+h2 {
+    background: #000;
+    line-height: 50px;
+    color: #eee;
 }
 #marveltext {
     font-family: 'Bowlby One SC', cursive;
@@ -56,8 +96,8 @@ img {
 .comic {
     position: absolute;
     margin-top: -5%;
-    margin-left: 15%;
-    width: 50%;
+    margin-left: 16%;
+    width: 45%;
     overflow: auto;
     z-index: 1;
 
@@ -66,4 +106,5 @@ img {
     position: absolute;
     z-index: 2;
     margin: 80px -260px;
+    overflow: none;
 }

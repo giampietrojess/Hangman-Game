@@ -75,23 +75,27 @@
             for (var i = 0; i < mysteryWord.length; i++) {
                 //converts letters to lower case for comparison
                 if (mysteryWord[i].toLowerCase() === letter.toLowerCase()) {
-
+                    //if letter guessed = a letter in the mystery word, put that letter in the correct spot
                     mysteryWordPlaceholderArr[i] = mysteryWord[i];
                 }        
             }
+            //call backs
             DOMplaceholders.textContent = mysteryWordPlaceholderArr.join('');
             checkIncorrect(letter);
         }    
         else {
+            //if the game is not running, alert to start game
             if (!gameRunning) {
                 alert("Click the New Game Button to Play");
-            } else {
+            } 
+            //if the game is running, and the same letter is guessed, alert
+            else {
             alert("You've already guessed this letter, try another!");
             }
         } 
     }
         
-    // Check if Guessed Letter is Incorrect and if not, push to Incorrect Bank
+    // Check if Guessed Letter is Incorrect and if not, push to Wrong Letter Bank
 
     function checkIncorrect(letter) {
         if (
@@ -114,6 +118,7 @@
             wins++;
             gameRunning = false; 
             DOMwins.textContent = wins;
+            DOMplaceholders.textContent = mysteryWord;
             alert("You win! Click the Start button to play again!");
         }
     }
