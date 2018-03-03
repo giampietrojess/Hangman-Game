@@ -105,6 +105,7 @@ h2 {
 #bubbletop {
     position: absolute;
     z-index: 2;
-    margin: 80px -260px;
+    margin: 100px -275px;
     overflow: none;
 }
+
