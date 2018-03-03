@@ -48,6 +48,7 @@
             }
         }
     
+        // Calls the DOM items 
         DOMremainingGuesses.textContent = guessesLeft;
         DOMplaceholders.textContent = mysteryWordPlaceholderArr.join('');
         DOMguessedLetters.textContent = wrongLettersBank;
@@ -59,16 +60,14 @@
 
 
     // Add onkeyup event for letter Guess
-
     document.onkeyup = function(event) {
         console.dir(event);
         if (event.keyCode >= 65 && event.keyCode <= 90) {
             letterGuess(event.key);
         }
     }
-
+    // Actual Game Function - Choose a letter, if it's correct, push it to the placeholder array.
     function letterGuess(letter) {
-        console.log(letter);
         if (gameRunning === true && guessedLettersBank.indexOf(letter) === -1) {
             //Actual Game functions
             guessedLettersBank.push(letter);

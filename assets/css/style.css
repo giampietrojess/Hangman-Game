@@ -2,11 +2,6 @@ body {
     background-color: #eee;
     text-align: center;
 }
-.col {
-    background-color: #aaa;
-    border: 2px #000 solid;
-    float: left;
-}
 #placeholders {
     letter-spacing: 3px;
     font-size: 16px;
@@ -17,14 +12,58 @@ img {
 .top {
     background-color: #ffffff;
     border: 2px black double;
+    background-image: url('../images/DY0270-York-Wallcoverings-Disney-Kids-3-Marvel-Comics-Wallpaper-Black.jpg');
+    background-attachment: scroll;
+    background-repeat: repeat;
 }
 .marvel {
     background-color: #990000;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0px;
+}
+.hangmanbox {
+    background-color: #fff;
+    border: 2px rgb(70, 20, 20) solid;
+    background-image: url('../images/comic-dots.png');
+    background-size: 100%;
+    margin-top: 10px;
+
+}
+.wordbox {
+    background-color: #fff;
+    border: 2px black solid;
+    margin-top: 10px;
+    
+}
+#marveltext {
+    font-family: 'Bowlby One SC', cursive;
     color: #fff;
     font-size: 8vw;
-    line-height: 150px;
-    width: 70%;
-    text-align: center;
-    font-family: 'Bowlby One SC', cursive;
-    margin: auto 15%;
+    text-shadow: 2px 2px #000;
+    margin-bottom: -5%;
+
+}
+#bottomtext {
+    color: #000;
+    font-size: 5vw;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px #aaa;
+
+}
+.comic {
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 15%;
+    width: 50%;
+    overflow: auto;
+    z-index: 1;
+
+}
+#bubbletop {
+    position: absolute;
+    z-index: 2;
+    margin: 80px -260px;
 }
