@@ -16,7 +16,7 @@ body {
 .top {
     background-color: #ffffff;
     border: 2px black double;
-    background-image: url('../images/DY0270-York-Wallcoverings-Disney-Kids-3-Marvel-Comics-Wallpaper-Black.jpg');
+    background-image: url('../images/comicbookbg.jpg');
     background-attachment: scroll;
     background-repeat: repeat;
     height: 33%;
@@ -47,26 +47,26 @@ body {
 .wrong {
     background-color: #fff;
     border: 2px black solid;
-    padding: 0px;
-    margin: 10px 5px 10px 5px;
+    padding: 0px 10px;
+    margin: 10px;
 }
 .remaining {
     background-color: #fff;
     border: 2px black solid;
-    margin: 10px 5px 10px 5px;
-    padding: 0px;
+    margin: 10px;
+    padding: 0px 10px;
 }
 .winner {
     background-color: #fff;
     border: 2px black solid;
-    margin: 10px 5px 10px 5px;
-    padding: 0px;
+    margin: 10px;
+    padding: 0px 10px;
 }
 .loser{
     background-color: #fff;
     border: 2px black solid;
-    margin: 10px 5px 10px 5px;
-    padding: 0px;
+    margin: 10px;
+    padding: 0px 10px;
 }
 
 h2 {
@@ -108,7 +108,6 @@ h2 {
     z-index: 2;
     overflow: none;
 }
-.test {
-    padding: 0px;
-}
+
+
 
