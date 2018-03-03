@@ -12,7 +12,7 @@
     var randomWords = ["Hawkeye","Iron Man","Spider Man","The Incredible Hulk","Black Widow","Captain America","Thor","Wolverine","Daredevil","Doctor Strange","Black Panther","Deadpool"],
         wins = 0,
         losses = 0,
-        guessesLeft = 8,
+        guessesLeft = 6,
         gameRunning = false,
         mysteryWord = '',
         mysteryWordPlaceholderArr = [],
@@ -30,7 +30,7 @@
         wrongLettersBank = [];
         mysteryWordPlaceholderArr = [];
         document.getElementById('hangman').src = "assets/images/7.png"; 
-        
+        document.getElementById('guessed-letters').textContent = 'Start Guessing';
         
         //This chooses the new word for each new game
         mysteryWord = randomWords[Math.floor(Math.random() * randomWords.length)];

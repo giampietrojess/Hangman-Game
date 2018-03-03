@@ -23,23 +23,29 @@
             </div>
         </div>
 
-        <div class="comic">
-            <img id="bubble" src="assets/images/comicbubble.png" width="30%">
-            <span id="bubbletop">
-                <p>Press This Button to Play!</p>
-                <p><button id="new-game-button">START</button></p>
-            </span>
-        </div>
+        <div class="row">
+            <div class="col-md-4 test"></div>
+            <div class="col-md-4">
+                <div class="comic">
+                    <img id="bubble" src="assets/images/comicbubble.png" width="30%">
+                    <span id="bubbletop">
+                        <p>Press This Button to Play!</p>
+                        <p><button id="new-game-button">START</button></p>
+                    </span>
+                </div>
+            </div>    
+            <div class="col-md-4 test"></div>
+        </div>    
     
 
         <div class="row">
-            <div class="col-md-6 hangmanbox">
+            <div class="col-md-5 hangmanbox">
 
                <img id="hangman" src="assets/images/7.png">
                
             </div>
-            <div class="col-md-1">
-            <!-- Spacer     -->
+            <div class="col-md-2">
+            <!-- Spacer -->
             </div>
 
 
@@ -49,21 +55,22 @@
                 <span id="placeholders">_ _ _ _  _ _ _ _</span>
 
             </div>
+        
 
+      
 
             <div class="col-md-3 wrong">
                 <h2>Wrong Letters:</h2>
-                <span id="guessed-letters"></span>
+                <span id="guessed-letters">_</span>
             </div>
             <div class="col-md-3 remaining">
                 <h2>Guesses Left:</h2>
                 <div id="remaining-guesses">0</div>
             </div>
-            
-        
-        <div class="row">
 
-            <div class="col-md-2 winner">
+   
+
+            <div class="col-md-3 winner">
                 <h2>Wins:</h2>
                 <div id="wins">0</div>   
             </div>
@@ -71,8 +78,8 @@
                 <h2>Losses</h2>
                 <div id="losses">0</div>
             </div>
-        </div>
     
+        </div>
        
 
     
