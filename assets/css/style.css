@@ -1,6 +1,7 @@
 body {
     background-color: #eee;
     text-align: center;
+    background-image: url('../images/concrete-texture.png');
 }
 #placeholders {
     letter-spacing: 3px;
